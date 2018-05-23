@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CrossApp"
+             x:Class="CrossApp.MainPage">
+
+    <StackLayout BackgroundColor="White">
+        <!-- Place new controls here -->
+        
+    	<Label Text="Afprøvning | Xamarin"
+               TextColor="Black"
+               FontSize="35"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+        <Entry
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="15"   
+            BackgroundColor="Wheat"/>
+        
+        <Button
+            Text="Button"
+            Pressed="Button_OnPressed"
+            HorizontalOptions="Center"
+            CornerRadius="20"
+            VerticalOptions="CenterAndExpand"
+            BackgroundColor="Black"
+            TextColor="White"/>
+        
+        <Button
+            Text="Ok"
+        
+        />
+        
+    </StackLayout>
+
+</ContentPage>
