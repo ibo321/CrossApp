@@ -10,6 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="AppBarButton" Margin="687,430,0,0" VerticalAlignment="Top" Height="256" Width="517"/>
 
     </Grid>
 </forms:WindowsPage>

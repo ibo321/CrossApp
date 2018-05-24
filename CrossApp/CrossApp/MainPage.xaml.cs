@@ -11,12 +11,13 @@ namespace CrossApp
 	{
 		public MainPage()
 		{
-			InitializeComponent();
-		}
-
-	    private void Button_OnPressed(object sender, EventArgs e)
+            InitializeComponent();
+        }
+        
+	    private async void Button_OnClicked(object sender, EventArgs e)
 	    {
-	        DisplayAlert("Display dialog", "Det virker", "CLOSE");
-	    }
+	        await Navigation.PushAsync(new NavigationPage(new SecondPage())); // Navigate to another page using async
+            NavigationPage.SetHasNavigationBar(this, false);  // Hide nav bar
+        }
 	}
 }

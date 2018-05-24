@@ -2,36 +2,40 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CrossApp"
+             xmlns:res="clr-namespace:Android.Content.Res;assembly=Mono.Android"
              x:Class="CrossApp.MainPage">
 
-    <StackLayout BackgroundColor="White">
-        <!-- Place new controls here -->
-        
-    	<Label Text="Afprøvning | Xamarin"
+    <StackLayout>
+        <!-- Controllers -->
+        <Label Text="Afprøvning"
                TextColor="Black"
                FontSize="35"
                VerticalOptions="Center"
                HorizontalOptions="Center"/>
+        <Image Source="xamarin.png" />
+
+        <Label
+            Text="Entry - edit the text"
+            HorizontalOptions="Center"
+            Margin="0 , 10, 0, 0"/>
+
         <Entry
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            FontSize="15"   
-            BackgroundColor="Wheat"/>
-        
-        <Button
-            Text="Button"
-            Pressed="Button_OnPressed"
+            WidthRequest="200"
+            FontSize="15"/>
+
+        <Label
+            Text="Bare en button"
             HorizontalOptions="Center"
-            CornerRadius="20"
-            VerticalOptions="CenterAndExpand"
+            Margin="0, 30, 0, 15"/>
+        <Button
+            Text="Navigate to second page"
+            Clicked="Button_OnClicked"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
             BackgroundColor="Black"
             TextColor="White"/>
-        
-        <Button
-            Text="Ok"
-        
-        />
-        
     </StackLayout>
-
+    
 </ContentPage>
